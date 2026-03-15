@@ -3,6 +3,7 @@ uvicorn
 opencv-python
 numpy
 insightface
+onnxruntime
 python-multipart
 pillow
 scikit-learn
