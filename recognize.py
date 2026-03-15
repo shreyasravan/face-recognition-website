@@ -6,7 +6,7 @@ import os
 
 # ---------------- Load Model ----------------
 app = insightface.app.FaceAnalysis(name="buffalo_l")
-app.prepare(ctx_id=0)
+app.prepare(ctx_id=-1)
 
 # ---------------- Load Embeddings ----------------
 with open("embeddings/student_embeddings.pkl", "rb") as f:

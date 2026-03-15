@@ -7,7 +7,9 @@ import os
 from recognize import recognize_faces
 
 app = FastAPI()
+from fastapi.staticfiles import StaticFiles
 
+app.mount("/static", StaticFiles(directory="static"), name="static")
 # create folders automatically
 os.makedirs("uploads", exist_ok=True)
 os.makedirs("results", exist_ok=True)
